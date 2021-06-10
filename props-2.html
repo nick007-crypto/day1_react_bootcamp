@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>]
+    <title> props-1</title>
+    </head>
+       const USER_DATA  = {
+         name: 'Nick Aswani'
+         username: 'nickaswani'
+
+       }
+
+        function Badge (props) {
+            return(
+                <div>
+                    <h1>Name: {props.user.name} </h1>
+                    <h3>username: {props.user.username} </h3>
+                </div>
+            )
+        }
+
+        ReactDOM.render(
+            <Badge user={USER_DATA}/>
+            document.getElementById('app')
+     
+        )
+            </script>
+        </body>
+<html>
